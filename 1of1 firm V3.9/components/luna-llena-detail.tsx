@@ -257,7 +257,7 @@ export default function LunaLlenaDetail({ onNavigate }: LunaLlenaDetailProps) {
           <div className="relative z-10 flex items-center justify-between">
             <div>
               <span className="text-amber-500 text-[10px] tracking-widest">REVIVE LA EXPERIENCIA</span>
-              <h3 className="text-3xl font-light italic tracking-wider mt-1">LUNA LLENA</h3>
+              <h3 className="text-sm font-medium italic tracking-wider mt-1" style={{ fontFamily: '"Inter", sans-serif' }}>LUNA LLENA</h3>
               <button className="flex items-center gap-2 mt-3 text-white/80 hover:text-amber-500 transition-colors">
                 <Play className="w-4 h-4" />
                 <span className="text-xs tracking-widest">VER AFTERMOVIE</span>
