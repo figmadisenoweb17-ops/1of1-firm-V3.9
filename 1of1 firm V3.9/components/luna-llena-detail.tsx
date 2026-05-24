@@ -225,7 +225,7 @@ export default function LunaLlenaDetail({ onNavigate }: LunaLlenaDetailProps) {
         <div
           className="relative py-8 px-4 text-center overflow-hidden rounded-lg"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80')`,
+            backgroundImage: `url('https://f005.backblazeb2.com/file/b21of1firm/background/LLtarj.png')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
