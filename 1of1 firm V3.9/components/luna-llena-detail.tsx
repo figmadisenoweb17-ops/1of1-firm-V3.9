@@ -110,7 +110,7 @@ export default function LunaLlenaDetail({ onNavigate }: LunaLlenaDetailProps) {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1532693322450-2cb5c511067d?w=1200&q=80')`,
+            backgroundImage: `url('')`,
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
