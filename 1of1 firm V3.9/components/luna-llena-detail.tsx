@@ -273,8 +273,8 @@ export default function LunaLlenaDetail({ onNavigate }: LunaLlenaDetailProps) {
       {/* Footer */}
       <footer className="px-4 py-6 flex items-center justify-between border-t border-white/10">
         <div>
-          <p className="text-white/60 text-xs">THIS IS NOT FOR EVERYONE.</p>
-          <p className="text-amber-500 text-xs tracking-wider">#1UNIQUEEXPERIENCE</p>
+          <p className="text-white/60 text-[10px]">THIS IS NOT FOR EVERYONE.</p>
+          <p className="text-amber-500 text-[10px] tracking-wider">#1UNIQUEEXPERIENCE</p>
         </div>
         <div className="flex items-center gap-4">
           <a href="#" className="text-white/60 hover:text-amber-500 transition-colors">
