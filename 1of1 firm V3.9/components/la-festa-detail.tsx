@@ -108,12 +108,15 @@ export default function LaFestaDetail({ onNavigate }: LaFestaDetailProps) {
       <section className="relative min-h-[70vh] flex flex-col justify-end pb-8">
         {/* Background Image - Concert with confetti/sparklers */}
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0"
           style={{
             backgroundImage: `url('https://f005.backblazeb2.com/file/b21of1firm/background/LFESTAhome.png')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center top",
+            backgroundRepeat: "no-repeat",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/20" />
 
         {/* Content */}
         <div className="relative z-10 px-4 md:px-8 text-center">
