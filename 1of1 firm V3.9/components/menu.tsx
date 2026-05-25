@@ -163,7 +163,7 @@ export default function Menu({ onNavigate }: MenuProps) {
             className="w-full h-full object-cover object-top md:object-center"
           />
         </div>
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/10" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black" />
 
         <div className="relative z-10 text-center px-4 flex flex-col items-center justify-center">
