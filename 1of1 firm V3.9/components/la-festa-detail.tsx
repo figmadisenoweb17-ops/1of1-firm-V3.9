@@ -110,7 +110,7 @@ export default function LaFestaDetail({ onNavigate }: LaFestaDetailProps) {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('')`,
+            backgroundImage: `url('https://f005.backblazeb2.com/file/b21of1firm/background/LFESTAhome.png')`,
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
