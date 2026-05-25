@@ -105,7 +105,7 @@ export default function LaFestaDetail({ onNavigate }: LaFestaDetailProps) {
       </button>
 
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex flex-col justify-end pb-6 md:pb-8">
+      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex flex-col justify-end pb-4 sm:pb-6 md:pb-8">
         {/* Background Image - Concert with confetti/sparklers */}
         <div
           className="absolute inset-0"
@@ -116,133 +116,133 @@ export default function LaFestaDetail({ onNavigate }: LaFestaDetailProps) {
             backgroundRepeat: "no-repeat",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/10" />
 
         {/* Content - Positioned at bottom */}
-        <div className="relative z-10 px-4 md:px-8 text-center mt-auto">
-          <span className="text-amber-500 text-xs tracking-[0.3em] mb-2 block">SIGNATURE EVENTS</span>
-          <h1 className="text-[18px] font-[500] tracking-wider mb-2 italic text-white" style={{ fontFamily: '"Inter", sans-serif' }}>LA FESTA</h1>
-          <p className="text-amber-500/80 text-sm tracking-widest mb-8">RUMBA ÉPICA · CARNAVAL</p>
+        <div className="relative z-10 px-3 sm:px-4 md:px-8 text-center mt-auto">
+          <span className="text-amber-500 text-[10px] sm:text-xs tracking-[0.2em] sm:tracking-[0.3em] mb-1 sm:mb-2 block">SIGNATURE EVENTS</span>
+          <h1 className="text-base sm:text-lg md:text-xl font-medium tracking-wider mb-1 sm:mb-2 italic text-white" style={{ fontFamily: '"Inter", sans-serif' }}>LA FESTA</h1>
+          <p className="text-amber-500/80 text-xs sm:text-sm tracking-widest mb-4 sm:mb-6 md:mb-8">RUMBA ÉPICA · CARNAVAL</p>
 
           {/* Date and Location */}
-          <div className="space-y-3 text-left max-w-xs mx-auto">
-            <div className="flex items-center gap-3">
-              <Calendar className="w-4 h-4 text-amber-500" />
+          <div className="space-y-2 sm:space-y-3 text-left max-w-[280px] sm:max-w-xs mx-auto">
+            <div className="flex items-center gap-2 sm:gap-3">
+              <Calendar className="w-3 h-3 sm:w-4 sm:h-4 text-amber-500 flex-shrink-0" />
               <div>
-                <span className="text-amber-500 text-xs tracking-wider">FECHA PRÓXIMAMENTE</span>
-                <p className="text-white/60 text-xs">PRONTO SERÁ ANUNCIADA</p>
+                <span className="text-amber-500 text-[10px] sm:text-xs tracking-wider">FECHA PRÓXIMAMENTE</span>
+                <p className="text-white/60 text-[10px] sm:text-xs">PRONTO SERÁ ANUNCIADA</p>
               </div>
             </div>
-            <div className="flex items-center gap-3">
-              <MapPin className="w-4 h-4 text-white/60" />
-              <span className="text-white/80 text-sm tracking-wider">BARRANQUILLA</span>
+            <div className="flex items-center gap-2 sm:gap-3">
+              <MapPin className="w-3 h-3 sm:w-4 sm:h-4 text-white/60 flex-shrink-0" />
+              <span className="text-white/80 text-xs sm:text-sm tracking-wider">BARRANQUILLA</span>
             </div>
-            <div className="flex items-center gap-3">
-              <Globe className="w-4 h-4 text-white/60" />
-              <span className="text-white/60 text-sm tracking-wider">ÚLTIMA VERSIÓN: PANAMÁ 2023</span>
+            <div className="flex items-center gap-2 sm:gap-3">
+              <Globe className="w-3 h-3 sm:w-4 sm:h-4 text-white/60 flex-shrink-0" />
+              <span className="text-white/60 text-[10px] sm:text-sm tracking-wider">ÚLTIMA VERSIÓN: PANAMÁ 2023</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* Countdown Section */}
-      <section className="px-4 py-6 max-w-lg mx-auto">
-        <div className="bg-black/60 border border-white/10 rounded-lg p-4 flex items-center gap-4">
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center">
-              <Clock className="w-5 h-5 text-white/60" />
+      <section className="px-3 sm:px-4 py-4 sm:py-6 max-w-lg mx-auto">
+        <div className="bg-black/60 border border-white/10 rounded-lg p-3 sm:p-4 flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
+          <div className="flex items-center gap-2 sm:gap-3">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-white/20 flex items-center justify-center">
+              <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-white/60" />
             </div>
             <div>
-              <span className="text-[10px] tracking-wider text-white/60 block">FALTA PARA</span>
-              <span className="text-xs tracking-wider text-white">LA FESTA</span>
+              <span className="text-[8px] sm:text-[10px] tracking-wider text-white/60 block">FALTA PARA</span>
+              <span className="text-[10px] sm:text-xs tracking-wider text-white">LA FESTA</span>
             </div>
           </div>
-          <div className="border-l border-white/20 pl-4">
+          <div className="border-t sm:border-t-0 sm:border-l border-white/20 pt-3 sm:pt-0 sm:pl-4 w-full sm:w-auto flex justify-center">
             <CountdownTimer targetDate={targetDate} />
           </div>
         </div>
       </section>
 
       {/* Pricing Section */}
-      <section className="px-4 py-6 max-w-lg mx-auto">
+      <section className="px-3 sm:px-4 py-4 sm:py-6 max-w-lg mx-auto">
         {/* Stage Label */}
-        <div className="flex items-center justify-center gap-4 mb-6">
+        <div className="flex items-center justify-center gap-2 sm:gap-4 mb-4 sm:mb-6">
           <div className="h-px bg-white/20 flex-1" />
-          <span className="text-amber-500 text-xs tracking-[0.2em]">ETAPA CREYENTES</span>
+          <span className="text-amber-500 text-[10px] sm:text-xs tracking-[0.15em] sm:tracking-[0.2em]">ETAPA CREYENTES</span>
           <div className="h-px bg-white/20 flex-1" />
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-2 gap-2 sm:gap-3">
           {/* Ticket */}
-          <div className="border border-white/20 p-4 text-center">
-            <div className="w-10 h-10 mx-auto mb-3 border border-amber-500/50 rounded flex items-center justify-center">
-              <svg className="w-5 h-5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <div className="border border-white/20 p-2 sm:p-4 text-center">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 mx-auto mb-2 sm:mb-3 border border-amber-500/50 rounded flex items-center justify-center">
+              <svg className="w-4 h-4 sm:w-5 sm:h-5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
               </svg>
             </div>
-            <h3 className="text-white font-medium tracking-wider text-sm mb-1">TICKET</h3>
-            <p className="text-white/50 text-[10px] tracking-wider mb-3">ACCESO GENERAL AL EVENTO</p>
-            <div className="mb-4">
-              <span className="text-2xl font-light text-white">$45.000</span>
-              <span className="text-white/60 text-xs ml-1">COP</span>
+            <h3 className="text-white font-medium tracking-wider text-xs sm:text-sm mb-1">TICKET</h3>
+            <p className="text-white/50 text-[8px] sm:text-[10px] tracking-wider mb-2 sm:mb-3">ACCESO GENERAL AL EVENTO</p>
+            <div className="mb-2 sm:mb-4">
+              <span className="text-lg sm:text-2xl font-light text-white">$45.000</span>
+              <span className="text-white/60 text-[10px] sm:text-xs ml-1">COP</span>
             </div>
-            <button className="w-full py-2 border border-white/30 text-white text-xs tracking-widest hover:bg-white/10 transition-colors">
+            <button className="w-full py-1.5 sm:py-2 border border-white/30 text-white text-[10px] sm:text-xs tracking-widest hover:bg-white/10 transition-colors">
               COMPRAR
             </button>
           </div>
 
           {/* VIP */}
-          <div className="border border-amber-500/50 p-4 text-center relative">
-            <div className="absolute -top-2 left-1/2 -translate-x-1/2 bg-amber-500 text-black text-[8px] tracking-wider px-2 py-0.5">
+          <div className="border border-amber-500/50 p-2 sm:p-4 text-center relative">
+            <div className="absolute -top-2 left-1/2 -translate-x-1/2 bg-amber-500 text-black text-[6px] sm:text-[8px] tracking-wider px-1.5 sm:px-2 py-0.5">
               MÁS VENDIDA
             </div>
-            <div className="w-10 h-10 mx-auto mb-3 border border-amber-500/50 rounded flex items-center justify-center">
-              <svg className="w-5 h-5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 mx-auto mb-2 sm:mb-3 border border-amber-500/50 rounded flex items-center justify-center">
+              <svg className="w-4 h-4 sm:w-5 sm:h-5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
             </div>
-            <h3 className="text-white font-medium tracking-wider text-sm mb-1">MESA VIP</h3>
-            <p className="text-white/50 text-[10px] tracking-wider">10 PERSONAS</p>
-            <p className="text-white/40 text-[8px] tracking-wider mb-3">EXPERIENCIA VIP PARA GRUPOS DE 10 PERSONAS</p>
+            <h3 className="text-white font-medium tracking-wider text-xs sm:text-sm mb-1">MESA VIP</h3>
+            <p className="text-white/50 text-[8px] sm:text-[10px] tracking-wider">10 PERSONAS</p>
+            <p className="text-white/40 text-[6px] sm:text-[8px] tracking-wider mb-2 sm:mb-3 hidden sm:block">EXPERIENCIA VIP PARA GRUPOS DE 10 PERSONAS</p>
             <div className="mb-1">
-              <span className="text-2xl font-light text-amber-500">$500.000</span>
-              <span className="text-amber-500/60 text-xs ml-1">COP</span>
+              <span className="text-lg sm:text-2xl font-light text-amber-500">$500.000</span>
+              <span className="text-amber-500/60 text-[10px] sm:text-xs ml-1">COP</span>
             </div>
-            <p className="text-white/40 text-[8px] mb-3">NORMALMENTE $700K - $2M</p>
-            <button className="w-full py-2 border border-amber-500/50 text-amber-500 text-xs tracking-widest hover:bg-amber-500 hover:text-black transition-colors">
+            <p className="text-white/40 text-[6px] sm:text-[8px] mb-2 sm:mb-3">NORMALMENTE $700K - $2M</p>
+            <button className="w-full py-1.5 sm:py-2 border border-amber-500/50 text-amber-500 text-[10px] sm:text-xs tracking-widest hover:bg-amber-500 hover:text-black transition-colors">
               COMPRAR
             </button>
           </div>
         </div>
 
         {/* Disclaimer */}
-        <div className="flex items-center justify-center gap-2 mt-4 text-white/40 text-[10px] tracking-wider">
-          <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <div className="flex items-center justify-center gap-1 sm:gap-2 mt-3 sm:mt-4 text-white/40 text-[8px] sm:text-[10px] tracking-wider">
+          <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
             <path d="M7 11V7a5 5 0 0110 0v4" />
           </svg>
           <span>PRECIOS EXCLUSIVOS ETAPA CREYENTES.</span>
         </div>
-        <p className="text-center text-white/40 text-[10px] tracking-wider">POR TIEMPO LIMITADO.</p>
+        <p className="text-center text-white/40 text-[8px] sm:text-[10px] tracking-wider">POR TIEMPO LIMITADO.</p>
       </section>
 
       {/* CTA Section */}
-      <section className="px-4 py-6">
+      <section className="px-3 sm:px-4 py-4 sm:py-6">
         <div
-          className="relative py-8 px-4 text-center overflow-hidden rounded-lg"
+          className="relative py-6 sm:py-8 px-3 sm:px-4 text-center overflow-hidden rounded-lg min-h-[100px] sm:min-h-[120px]"
           style={{
             backgroundImage: `url('https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-          <div className="absolute inset-0 bg-black/70" />
-          <div className="relative z-10">
-            <p className="text-white text-sm tracking-widest mb-4">LOS CUPOS SON LIMITADOS.</p>
-            <button className="px-8 py-3 bg-amber-500 text-black font-medium tracking-widest hover:bg-amber-400 transition-colors flex items-center gap-2 mx-auto">
+          <div className="absolute inset-0 bg-black/60 sm:bg-black/70" />
+          <div className="relative z-10 flex flex-col items-center justify-center h-full">
+            <p className="text-white text-xs sm:text-sm tracking-widest mb-3 sm:mb-4">LOS CUPOS SON LIMITADOS.</p>
+            <button className="px-4 sm:px-8 py-2 sm:py-3 bg-amber-500 text-black font-medium text-[10px] sm:text-xs tracking-widest hover:bg-amber-400 transition-colors flex items-center gap-2 mx-auto">
               COMPRAR ENTRADAS
-              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <svg className="w-3 h-3 sm:w-4 sm:h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
               </svg>
             </button>
@@ -251,9 +251,9 @@ export default function LaFestaDetail({ onNavigate }: LaFestaDetailProps) {
       </section>
 
       {/* Aftermovie Section */}
-      <section className="px-4 py-6">
+      <section className="px-3 sm:px-4 py-4 sm:py-6">
         <div
-          className="relative py-8 px-4 overflow-hidden rounded-lg"
+          className="relative py-6 sm:py-8 px-3 sm:px-4 overflow-hidden rounded-lg"
           style={{
             backgroundImage: `url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80')`,
             backgroundSize: "cover",
@@ -261,29 +261,29 @@ export default function LaFestaDetail({ onNavigate }: LaFestaDetailProps) {
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/50" />
-          <div className="relative z-10 flex items-center justify-between">
+          <div className="relative z-10 flex items-center justify-between gap-2">
             <div>
-              <span className="text-amber-500 text-[10px] tracking-widest">REVIVE LA EXPERIENCIA</span>
-              <h3 className="text-3xl font-light italic tracking-wider mt-1 text-amber-100">LA FESTA</h3>
-              <button className="flex items-center gap-2 mt-3 text-white/80 hover:text-amber-500 transition-colors">
-                <Play className="w-4 h-4" />
-                <span className="text-xs tracking-widest">VER AFTERMOVIE</span>
+              <span className="text-amber-500 text-[8px] sm:text-[10px] tracking-widest">REVIVE LA EXPERIENCIA</span>
+              <h3 className="text-xl sm:text-3xl font-light italic tracking-wider mt-1 text-amber-100">LA FESTA</h3>
+              <button className="flex items-center gap-1.5 sm:gap-2 mt-2 sm:mt-3 text-white/80 hover:text-amber-500 transition-colors">
+                <Play className="w-3 h-3 sm:w-4 sm:h-4" />
+                <span className="text-[10px] sm:text-xs tracking-widest">VER AFTERMOVIE</span>
               </button>
             </div>
-            <div className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center">
-              <Play className="w-6 h-6 text-white" />
+            <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
+              <Play className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
             </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="px-4 py-6 flex items-center justify-between border-t border-white/10">
-        <div>
-          <p className="text-white/60 text-xs">THIS IS NOT FOR EVERYONE.</p>
-          <p className="text-amber-500 text-xs tracking-wider">#1UNIQUEEXPERIENCE</p>
+      <footer className="px-3 sm:px-4 py-4 sm:py-6 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-0 border-t border-white/10">
+        <div className="text-center sm:text-left">
+          <p className="text-white/60 text-[10px] sm:text-xs">THIS IS NOT FOR EVERYONE.</p>
+          <p className="text-amber-500 text-[10px] sm:text-xs tracking-wider">#1UNIQUEEXPERIENCE</p>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3 sm:gap-4">
           <a href="#" className="text-white/60 hover:text-amber-500 transition-colors">
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
