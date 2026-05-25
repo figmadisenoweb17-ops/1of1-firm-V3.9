@@ -119,7 +119,7 @@ export default function LaFestaDetail({ onNavigate }: LaFestaDetailProps) {
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-black/20" />
 
         {/* Content */}
-        <div className="relative z-10 px-4 md:px-8 text-center pt-8 md:pt-12">
+        <div className="relative z-10 px-4 md:px-8 text-center pt-20 md:pt-28">
           <span className="text-amber-500 text-xs tracking-[0.3em] mb-2 block">SIGNATURE EVENTS</span>
           <h1 className="text-[18px] font-[500] tracking-wider mb-2 italic text-white" style={{ fontFamily: '"Inter", sans-serif' }}>LA FESTA</h1>
           <p className="text-amber-500/80 text-sm tracking-widest mb-8">RUMBA ÉPICA · CARNAVAL</p>
