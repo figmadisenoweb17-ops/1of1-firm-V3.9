@@ -116,7 +116,7 @@ export default function LaFestaDetail({ onNavigate }: LaFestaDetailProps) {
             backgroundRepeat: "no-repeat",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-black/20" />
 
         {/* Content */}
         <div className="relative z-10 px-4 md:px-8 text-center">
