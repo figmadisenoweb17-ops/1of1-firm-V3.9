@@ -118,7 +118,7 @@ export default function LaFestaDetail({ onNavigate }: LaFestaDetailProps) {
         />
         {/* Additional background color to fill empty space */}
         <div className="absolute inset-0 bg-black -z-10" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
 
         {/* Content - Positioned at bottom */}
         <div className="relative z-10 px-3 sm:px-4 md:px-8 text-center mt-auto">
