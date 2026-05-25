@@ -105,7 +105,7 @@ export default function LaFestaDetail({ onNavigate }: LaFestaDetailProps) {
       </button>
 
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex flex-col justify-end pb-8">
+      <section className="relative min-h-[70vh] flex flex-col justify-end pb-6 md:pb-8">
         {/* Background Image - Concert with confetti/sparklers */}
         <div
           className="absolute inset-0"
@@ -118,8 +118,8 @@ export default function LaFestaDetail({ onNavigate }: LaFestaDetailProps) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-black/20" />
 
-        {/* Content */}
-        <div className="relative z-10 px-4 md:px-8 text-center pt-36 md:pt-40">
+        {/* Content - Positioned at bottom */}
+        <div className="relative z-10 px-4 md:px-8 text-center mt-auto">
           <span className="text-amber-500 text-xs tracking-[0.3em] mb-2 block">SIGNATURE EVENTS</span>
           <h1 className="text-[18px] font-[500] tracking-wider mb-2 italic text-white" style={{ fontFamily: '"Inter", sans-serif' }}>LA FESTA</h1>
           <p className="text-amber-500/80 text-sm tracking-widest mb-8">RUMBA ÉPICA · CARNAVAL</p>
