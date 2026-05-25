@@ -46,7 +46,7 @@ export default function HamburgerMenu({ isOpen, onClose, onNavigate, currentPage
           backgroundImage: `url('https://f005.backblazeb2.com/file/b21of1firm/background/BGhamburger.jpg')`,
         }}
       />
-      <div className="absolute inset-0 bg-black/90" />
+      <div className="absolute inset-0 bg-black/40" />
 
       {/* Menu Content */}
       <div className="relative z-10 h-full flex flex-col">
