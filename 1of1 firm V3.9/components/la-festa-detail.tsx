@@ -105,18 +105,20 @@ export default function LaFestaDetail({ onNavigate }: LaFestaDetailProps) {
       </button>
 
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex flex-col justify-end pb-4 sm:pb-6 md:pb-8">
+      <section className="relative min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] flex flex-col justify-end pb-4 sm:pb-6 md:pb-8">
         {/* Background Image - Concert with confetti/sparklers */}
         <div
           className="absolute inset-0"
           style={{
             backgroundImage: `url('https://f005.backblazeb2.com/file/b21of1firm/background/LFESTAhome.png')`,
-            backgroundSize: "cover",
-            backgroundPosition: "center 30%",
+            backgroundSize: "contain",
+            backgroundPosition: "center top",
             backgroundRepeat: "no-repeat",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/10" />
+        {/* Additional background color to fill empty space */}
+        <div className="absolute inset-0 bg-black -z-10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
 
         {/* Content - Positioned at bottom */}
         <div className="relative z-10 px-3 sm:px-4 md:px-8 text-center mt-auto">
