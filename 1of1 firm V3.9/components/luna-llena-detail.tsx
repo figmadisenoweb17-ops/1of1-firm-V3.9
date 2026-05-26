@@ -246,7 +246,7 @@ export default function LunaLlenaDetail({ onNavigate }: LunaLlenaDetailProps) {
       {/* Aftermovie Section */}
       <section className="px-4 py-6">
         <div
-          className="relative py-8 px-4 overflow-hidden rounded-lg"
+          className="relative py-8 px-4 border border-white/10 overflow-hidden rounded-lg"
           style={{
             backgroundImage: `url('https://f005.backblazeb2.com/file/b21of1firm/background/LLluna.png')`,
             backgroundSize: "cover",
