@@ -253,7 +253,7 @@ export default function LunaLlenaDetail({ onNavigate }: LunaLlenaDetailProps) {
             backgroundPosition: "center",
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/50" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/20" />
           <div className="relative z-10 flex items-center justify-between">
             <div>
               <span className="text-amber-500 text-[10px] tracking-widest">REVIVE LA EXPERIENCIA</span>
