@@ -232,7 +232,7 @@ export default function LaFestaDetail({ onNavigate }: LaFestaDetailProps) {
       {/* CTA Section */}
       <section className="px-3 sm:px-4 py-4 sm:py-6">
         <div
-          className="relative py-6 sm:py-8 px-3 sm:px-4 text-center overflow-hidden rounded-lg min-h-[100px] sm:min-h-[120px]"
+          className="relative py-6 sm:py-8 px-3 sm:px-4 text-center border border-white/10 overflow-hidden rounded-lg min-h-[100px] sm:min-h-[120px]"
           style={{
             backgroundImage: `url('https://f005.backblazeb2.com/file/b21of1firm/background/LFESTAtarj.png')`,
             backgroundSize: "cover",
