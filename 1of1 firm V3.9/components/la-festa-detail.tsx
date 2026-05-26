@@ -234,7 +234,7 @@ export default function LaFestaDetail({ onNavigate }: LaFestaDetailProps) {
         <div
           className="relative py-6 sm:py-8 px-3 sm:px-4 text-center overflow-hidden rounded-lg min-h-[100px] sm:min-h-[120px]"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80')`,
+            backgroundImage: `url('https://f005.backblazeb2.com/file/b21of1firm/background/LFESTAtarj.png')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
