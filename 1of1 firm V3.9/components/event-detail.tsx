@@ -271,7 +271,7 @@ export default function EventDetail({ onNavigate }: EventDetailProps) {
             backgroundImage: `url('https://f005.backblazeb2.com/file/b21of1firm/background/BBbackfuego.png')`,
           }}
         />
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center px-3 sm:px-4">
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light italic tracking-wide text-white mb-1 sm:mb-2">
             ASEGURA TU LUGAR
