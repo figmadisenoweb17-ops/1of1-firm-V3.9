@@ -223,7 +223,7 @@ export default function LunaLlenaDetail({ onNavigate }: LunaLlenaDetailProps) {
       {/* CTA Section */}
       <section className="px-2 sm:px-4 py-6">
         <div
-          className="relative py-6 sm:py-8 px-3 sm:px-4 text-center overflow-hidden rounded-lg min-h-[120px] sm:min-h-[140px]"
+          className="relative py-6 sm:py-8 px-3 sm:px-4 text-center border border-white/10 overflow-hidden rounded-lg min-h-[120px] sm:min-h-[140px]"
           style={{
             backgroundImage: `url('https://f005.backblazeb2.com/file/b21of1firm/background/LLtarj.png')`,
             backgroundSize: "cover",
